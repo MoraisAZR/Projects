@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.coach-text{
+    text-align: center;
+   width: 55%;
+   margin: 0 auto;
+}
+
+.coach-text h3{
+    font-weight: bold;
+    font-family: "DM Serif Display";
+    text-transform: uppercase;
+}
+
+.coaches-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.coach-profile{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+   
+}
+
+.coach-profile h3{
+    text-decoration: 2px underline #bb2d2d;
+}
+
+
+
+.trainers-socials i{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.coaches-container img{
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(135deg, #FF7171, #FF5E5E, #bb2d2d);
+}
+
+
+
+
+.coach-details{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@media screen and (max-width: 560px){
+
+    .coaches-container img{
+        height: 150px;
+        width: 100%;
+    }
+    .trainers-socials i{
+        font-size: 12px;
+    }
+    .coach-text p{
+        width:100% ;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 470px){
+  .coach-details{
+    height: 150px;
+   }  
+
+   .coach-profile h3{
+    font-size: 14px;
+   }
+
+   .coach-profile p{
+    font-size: 13px;
+   }
+
+   .trainers-socials{
+    width: 70%;
+    margin:0 auto;
+   }
+}

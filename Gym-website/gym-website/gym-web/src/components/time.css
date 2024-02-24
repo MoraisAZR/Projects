@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.cycling{
+    background-image: url(cycling.png);
+}
+
+.jiujitsu{
+    background-image: url(bjj.png);
+}
+
+.power{
+    background-image: url(power.png);
+}
+
+.yoga{
+    background-image: url(yoga.png);
+}
+
+.abs{
+    background-image: url(abs.png);
+}
+
+
+.full{
+    background-image: url(full.png);
+}
+
+
+
+.time-container {
+    display: flex;
+    justify-content: center;
+   margin-top: 20px;
+  }
+
+  .time-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .time-text h3{
+color: #fff;
+    text-transform: uppercase;
+    font-family: "DM Serif Display";
+  }
+.time-effect{
+     width: 50%;
+    height: 130px;
+    display: block;
+}
+
+
+  .cycling, .full {
+    grid-column: span 2;
+  }
+
+
+  .time-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    width: 90%;
+    gap: 15px;
+
+  }
+  
+
+.time-boxes > div{
+    height: 200px;
+    background-size: cover;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.time-boxes p{
+    background-color: #bb2d2d;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+    color: #fff;
+}
+
+.time-boxes h2{
+    margin-top: 102px;
+}
+
+@media screen and (max-width: 920px){
+    .time-container {
+       width: 100%;
+      }
+
+      .time-boxes p{
+        font-size: 10px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .time-boxes h2{
+        font-size: 16px;
+    }
+    .time-boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap:10px;
+      }
+
+}
