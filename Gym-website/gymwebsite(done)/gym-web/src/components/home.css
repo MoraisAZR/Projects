@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-container i{
+    color:#eb2e2e;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
+.detail-boxes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+
+
+.gymbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   text-align: center;
+    border-bottom-right-radius: 10%;
+    border-top-left-radius: 10%;
+    height: 250px;
+    width: calc(33.3% -22px);
+    margin: 10px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.gymbox:hover{
+    color: #fff;
+    background-image: url(hammer.jpg);
+    background-size: cover;
+    transition: all 0.3s ease;
+
+}
+
+.gymbox h3{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "DM Serif Display";
+}
+
+.gymbox p{
+    padding: 10px;
+    font-family: "Poppins";
+    font-weight: bold;
+        font-size: 16px;
+}
+
+@media screen and (max-width: 920px){
+    .box-container i{
+        font-size: 26px;
+    }  
+
+    .gymbox h3{
+        font-size: 18px;
+        
+    }
+    
+    .gymbox p{
+            font-size: 14px;
+    }
+
+    .gymbox{
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 590px){
+    .box-container i{
+        font-size: 20px;
+    }    
+    .gymbox h3{
+        font-size: 16px;
+        
+    }
+    
+    .gymbox p{
+            font-size: 12px;
+    }
+
+    .gymbox{
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 440px){
+    .box-container i{
+        font-size: 18px;
+    }    
+    .gymbox h3{
+        font-size: 14px;
+        
+    }
+    .gymbox{
+        width: 100%;
+    }
+}

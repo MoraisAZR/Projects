@@ -1,0 +1,63 @@
+.home-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin:0 auto;
+    height: 100vh;
+
+}
+
+.home-container h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;  
+    
+}
+
+.crypto-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 4px;
+    width: 80%;
+    margin-top: 70px;
+
+}
+
+
+
+.crypto-text span{
+    background: linear-gradient(142deg, rgba(255,0,215,1) 0%, rgba(6,15,255,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 80px;
+    
+}
+
+.img-box{
+    height: 70px;
+    width: 100px;
+    animation: MoveAround 3s infinite ;
+    margin-bottom: 60px;
+    
+}
+
+.img-box img{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes MoveAround {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }

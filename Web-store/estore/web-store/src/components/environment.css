@@ -1,0 +1,106 @@
+.environment-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin:0 auto;
+    height:500px;
+}
+
+.recycled-img img{
+    height: 300px;
+    width: 100%;
+}
+
+.recycled-img{
+    width: 50%;
+    height: auto;
+max-height: 300px;
+}
+
+.environment-msg{
+    min-height: 300px;
+    max-height: 300px;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+    overflow:hidden;
+}
+
+.environment-msg p{
+    width: 80%;
+    font-family: sans-serif;
+    text-align: center;
+    padding:10px;
+}
+
+.environment-msg h2{
+    font-family: 'Trebuchet MS';
+}
+
+.environment-msg button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: black;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.environment-msg button:hover{
+    background-color: red;
+    color:#fff;
+    transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 790px){
+    .environment-msg h2{
+        font-size: 20px;
+    }
+ 
+    .environment-msg p{
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 555px){
+    .environment-msg h2{
+        font-size: 16px;
+    }
+
+    .environment-msg p{
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .environment-msg button{
+        height: 30px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 555px){
+    .environment-msg h2{
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .environment-msg p{
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .environment-msg button{
+        height: 25px;
+        width: 80px;
+    }
+}

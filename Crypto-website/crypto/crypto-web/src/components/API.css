@@ -1,0 +1,20 @@
+.home-info{
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    width: 70%;
+    margin:0 auto;
+}
+
+.home-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+

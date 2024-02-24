@@ -1,0 +1,96 @@
+.trending{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    margin:0 auto;
+
+}
+
+.trending-container{
+display: flex;
+height: 350px;
+flex-direction: row;
+width: 100%;
+overflow: hidden;
+    gap:12px;
+}
+
+.trending-card{
+    width: 50%;
+    height: 250px;
+    text-align: left;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    overflow: hidden;
+
+}
+.trending-card:hover{
+    border: 2px solid black;
+}
+
+.trending-details{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+    color:black;
+}
+
+.trending-card h2{
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+    }
+    
+    .trending-card p{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 6px;
+    }
+    
+    .trending-card img{
+        width: 100%;
+        height: 150px;
+    }
+
+    .title-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Trebuchet MS';
+        width: 100%;
+    }
+
+    .title-container button{
+        height: 30px;
+        width: 45px;
+        background-color: black;
+        border: none;
+        color: #fff;
+        margin:3px;
+        cursor: pointer;
+    }
+
+
+    @media screen and (max-width: 860px){
+        .trending-card h2{
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 730px){
+        .trending-card img{
+            height: 100px;
+        }
+
+        .trending-card{
+            height: 200px;
+            width: 80%;
+        }
+
+        .trending{
+            width: 90%;
+        }
+    }
+

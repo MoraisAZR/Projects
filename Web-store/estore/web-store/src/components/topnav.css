@@ -1,0 +1,341 @@
+
+*{
+    list-style-type: none;
+}
+
+.topnav-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding:15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 15px -3px rgba(0,0,0,0.1);
+}
+
+.topnav-container h1{
+    color: black;
+}
+
+.topnav{
+    position:sticky;
+    top:0;
+    z-index: 999;
+    background-color: #fff;
+
+}
+
+
+.categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.categories h2{
+    color: black;
+}
+
+.categories h2:hover{
+    text-decoration:underline black;
+}
+
+.side-menu{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    z-index: 1000;
+    padding:8px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: 999;
+}
+
+.no-scroll {
+    overflow: hidden;
+  }
+
+  .fa-times{
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+.cart{
+    position: relative;
+}
+
+.cart p{
+position: absolute;
+top:-14px;
+right:-10px;
+background-color: red;
+border-radius: 50%;
+font-size: 12px;
+font-weight: bold;
+font-family: 'Trebuchet MS';
+height: 18px;
+width: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+color:#fff;
+}
+
+  .cart-image{
+    width: 40%;
+    height: 90%;
+  }
+.cart-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 6px;
+    height:80px;
+    margin-top: 20px;
+
+}
+
+.cart-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-details h3{
+    font-family: sans-serif;
+font-weight: normal;
+}
+
+.item-details p{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.item-options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-options i{
+    font-size: 18px;
+}
+
+.details-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding:6px;
+}
+
+.items-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-items-container{
+    overflow-y: scroll;
+    height: 440px;
+}
+
+.cart-items-container::-webkit-scrollbar {
+    width: 12px; 
+}
+.cart-items-container::-webkit-scrollbar-thumb {
+    background-color: darkgray; 
+    border-radius: 6px;
+}
+
+.item-btns button{
+    height: 20px;
+    width: 25px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+#mid-btn{
+    background-color: #fff;
+    color:black;
+    border: 1px solid black;
+}
+
+.cart-checkout{
+    position: absolute;
+    bottom:70px;
+    right:0;
+    left: 0;
+    width: 90%;
+    margin:0 auto;
+border-top: 3px dotted black;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-top: 10px;
+}
+
+.cart-checkout button{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.no-items-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin:0 auto;
+    margin-top: 90px;
+    gap:10px;
+}
+
+.no-items-text h2{
+    font-family: 'Trebuchet MS';
+}
+
+.no-items-text p{
+    font-family: sans-serif;
+}
+
+.no-items-text button{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    text-transform: uppercase;
+    border: none;
+    color: #fff;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin:0 auto;
+
+
+}
+
+
+@media only screen  and (max-width:1784px){
+    .cart-items-container{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px){
+.side-menu{
+    width: 40%;
+}
+}
+
+@media screen and (max-width: 500px){
+   
+    .side-menu{
+        width: 50%;
+    }
+
+.item-details{
+    font-size: 14px;
+}
+
+.cart-item{
+    width: 100%;
+}
+
+    .cart-image{
+        height: 70%;
+    }
+
+    .item-btns button,#mid-btn{
+        height: 15px;
+        width: 20px;
+        border: none;
+    }
+    .categories h2{
+        font-size: 18px;
+    }
+
+    .topnav-container h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .no-items-text h2{
+        font-size: 20px;
+    }
+    .no-items-text p{
+        font-size: 14px;
+    }
+    .no-items-text button{
+        height: 30px;
+        width: 90px;
+    }
+
+    .cart-main{
+        font-size: 13px;
+        word-wrap: break-word;
+    }
+
+    .cart-checkout button{
+        height: 30px;
+        width: 90px;
+        font-size: 10px; 
+    }
+}
+
+@media screen and (max-width: 370px){
+    .categories h2{
+        font-size: 16px;
+    }
+
+    .topnav-container h1{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+   
+}
+

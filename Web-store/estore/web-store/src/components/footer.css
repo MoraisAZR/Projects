@@ -1,0 +1,66 @@
+.footer{
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: auto;
+}
+
+.footer-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    z-index: 999;
+}
+
+.news-letter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    font-family: 'Trebuchet MS';
+}
+
+.information{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:6px;
+}
+
+.input-container input{
+    height: 30px;
+    width: 220px;
+}
+
+.input-container button{
+    width: 120px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .input-container input{
+        width: 180px;
+    }
+    .input-container button{
+        width: 100px;
+    }
+}

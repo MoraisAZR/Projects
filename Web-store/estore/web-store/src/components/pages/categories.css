@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+.categories-container{
+    width: 90%;
+    margin:0 auto;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS';
+}
+
+.categories-page{
+    width: 100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(2,1fr);
+    margin-top: 20px;
+row-gap: 40px;
+height: 100vh;
+overflow: auto;
+}
+
+.categories-page::-webkit-scrollbar {
+    width: 12px; 
+}
+.categories-page::-webkit-scrollbar-thumb {
+    background-color: darkgray; 
+    border-radius: 6px;
+}
+
+
+.categories-button{
+    width: 50%;
+    margin:0 auto;
+    gap:10px;
+}
+
+.categories-button button{
+   background-color: #fff;
+   border: 1px solid rgb(153, 153, 153);
+   border-radius: 6px;
+   width: 90px;
+   height: 20px;
+cursor: pointer;
+margin: 4px;
+font-family: sans-serif;
+}
+
+.category-details{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 100%;
+
+}
+
+.category-details h2{
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+    }
+    
+    .category-details p{
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+
+.categories-items{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin:0 auto;
+    height: 300px;
+    text-align: left;
+    color: black;
+}
+
+.categories-items:hover{
+    border: 2px solid black;
+}
+
+.categories-img{
+    width: 90%;
+    height: 220px;
+    margin:0 auto;
+}
+
+.categories-img img{
+    width: 100%;
+    height: 90%;
+}
+
+@media screen and (max-width: 690px){
+    .categories-img{
+        width: 70%;
+        height: 120px;
+        margin:0 auto;
+    }
+
+    .categories-items{
+        height: 200px;
+    }
+    
+}

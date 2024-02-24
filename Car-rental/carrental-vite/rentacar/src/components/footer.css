@@ -1,0 +1,140 @@
+.footer-container {
+    display: flex;
+    background-color: #242424;
+    height: auto;
+    width: 100%;
+    margin-top: 110px;
+    overflow: hidden;
+  }
+  
+  .footer-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin:0 auto;
+    margin-top: 20px;
+  }
+  
+  .Orange-car,
+  .company,
+  .working-hours,
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    color:#fff;
+    height: 100%;
+    width: 20%;
+  }
+  
+  
+  
+  .Orange-car h3,
+  .company h3,
+  .working-hours h3,
+  .subscription h3{
+    font-family: "DM Serif Display";
+    font-size: 1.375rem;
+    text-decoration: underline #f7920d;
+    
+    
+  }
+  
+  .company-text {
+    width: 100%;
+  }
+
+  .company p{
+    cursor: pointer;
+  }
+  
+  .contacts{
+    cursor: pointer;
+  }
+  
+  .contacts i {
+    margin-right: 6px;
+    color:#FFF;
+  }
+  
+  .Orange-car p,
+  .company p,
+  .working-hours p,
+  .subscription p {
+    font-size: 1rem;
+    font-family: "Poppins";
+    margin-top: 10px;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .input-areas{
+    width: 80%;
+    margin-top: 6px;
+  }
+  
+  .input-areas input{
+    width: 100%;
+    height:30px;
+    padding-left: 10px;
+  }
+
+  .input-areas button{
+    width: 100%;
+    height:30px;
+    margin-top: 10px;
+    font-size: 1.125rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    background-color: #fff;
+  }
+
+  .input-areas button:hover{
+    background-color: #716d6e;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+
+
+  @media screen and (max-width: 520px){
+    
+    .footer-wrapper{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 90%;
+      margin:0 auto;
+      gap: 20px;
+
+    }
+    .Orange-car,
+    .company,
+    .working-hours,
+    .subscription{
+      width: 100%;
+    }
+
+    
+    .Orange-car p,
+    .company p,
+    .working-hours p,
+    .subscription p{
+      font-size: 0.875rem;
+    }
+
+    .Orange-car h3,
+  .company h3,
+  .working-hours h3,
+  .subscription h3{
+    font-size: 1.125rem;
+  }
+
+  .input-areas{
+    width: 100%;
+  }
+
+  .input-areas button, input{
+    font-size: 0.875rem;
+  }
+  }

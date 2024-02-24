@@ -1,0 +1,77 @@
+.comfort-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin:0 auto;
+    height:500px;
+}
+
+.comfort-img img{
+    height: 300px;
+    width: 100%;
+}
+
+.comfort-img{
+    width: 50%;
+    height: auto;
+max-height: 300px;
+}
+
+.comfort-msg{
+    min-height: 300px;
+    max-height: 300px;
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(247, 247, 247);
+    overflow:hidden;
+}
+
+.comfort-msg p{
+    width: 80%;
+    font-family: sans-serif;
+    text-align: center;
+    padding:10px;
+}
+
+.comfort-msg h2{
+    font-family: 'Trebuchet MS';
+}
+
+.comfort-msg button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    background-color: black;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comfort-msg button:hover{
+background-color: red;
+color:#fff;
+transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 420px){
+    .comfort-msg h2{
+        font-size: 18px;
+    }
+
+    .comfort-msg p{
+        font-size: 14px;
+    }
+
+    .comfort-msg button{
+        height: 30px;
+        width: 100px;
+    }
+}

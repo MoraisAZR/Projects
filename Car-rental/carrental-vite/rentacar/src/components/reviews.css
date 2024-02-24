@@ -1,0 +1,121 @@
+.reviews-text{
+    text-align: center;  
+    margin-top: 30px;
+}
+
+.secondary-text{
+    font-family:"DM Serif Display";
+    font-size: 1.25rem;
+}
+
+
+.main-text{
+    font-family:"DM Serif Display"; 
+    font-size: 2.25rem;
+    text-decoration: underline #f7920d;
+}
+
+.paragraph-text{
+    width: 80%;
+    font-size: 1.115rem;
+    margin: 0 auto;
+    font-family: "Poppins";
+    margin-top: 10px;
+
+}
+
+.profile-container{
+    width: 70%; 
+    height:300px;
+    margin-bottom: 20px; 
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+margin-top: 20px;
+position: relative;
+}
+
+.review-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    width: 90%;
+    margin:0 auto;
+}
+
+
+
+.profile{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.profile-pic {
+    border-radius: 50%; 
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+  }
+
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin-left: 15px;
+    font-family: "DM Serif Display";
+}
+
+.review-essay{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+
+.fa-quote-right{
+    display: flex;
+    align-items: center;
+    font-size: 3.25rem;
+    color: rgb(247, 146, 13);
+   position: absolute;
+   right: 30px;
+   top: 20px;
+}
+
+@media screen and (max-width: 610px){
+  .review-essay{
+    font-size: 18px;
+  }
+  .fa-quote-right{
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .review-essay{
+    font-size: 16px;
+  }
+
+  .info h3{
+    font-size: 17px;
+  }
+
+  .info p{
+    font-size: 14px;
+  }
+
+
+  .fa-quote-right{
+    display: none;
+  }
+}
+

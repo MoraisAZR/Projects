@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.hero{
+  height: 520px;
+  width: 100%;
+background-color: #242424;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+align-items: center;
+width: 100%;
+}
+
+
+
+.background-img{
+    width: 40%;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.boximg{
+    width: 100%;
+    height: 500px;
+}
+
+.hero-text{
+    color: #fff;
+    flex:1;
+}
+
+.side-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.gym-text h1{
+    font-family: "DM Serif Display";  
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.gym-text h2{
+    font-weight: lighter;
+    font-family: "Poppins";
+    font-size: 32px;
+}
+
+.class-btn{
+    height: 45px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.class-btn:hover{
+    background-color: #e6e6e6;
+    outline: none;
+    border: 2px solid #bb2d2d;
+}
+
+.fa-arrow-right{
+    padding-left: 10px;
+    color:#bb2d2d;
+}
+
+.sideway-text{
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+    margin-top: 12px; 
+   
+}
+
+.social-icons{
+color: #fff;
+padding-left: 40px;
+}
+
+.icons{
+    display: flex;
+    width: 50px;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.icons i{
+    padding: 4px;
+    cursor: pointer;
+}
+
+
+
+.social-icons h1{
+    color:#bb2d2d;
+    padding-left: 2px;
+}
+
+@media screen and (max-width: 520px){
+    .boximg{
+        width: 150px;
+        height: 400px;
+        
+    }
+
+  
+    .gym-text h1{
+        font-size: 30px;
+    }
+    
+    .gym-text h2{
+
+        font-size: 22px;
+    }
+
+    .class-btn{
+        height: 35px;
+        width: 150px;
+        font-size: 16px;
+    }
+
+    
+
+    .hero-container{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width: 410px){
+    .hero-container{
+        width: 90%;
+       
+    }
+    .social-icons{
+        width: 70%;
+    }
+    .social-icons{
+        display: none;
+      }
+
+      .boximg{
+        width: 180px;
+        height: 400px;
+        padding-right: 70px;
+    }
+
+}

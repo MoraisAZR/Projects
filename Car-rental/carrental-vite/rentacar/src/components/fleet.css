@@ -1,0 +1,181 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+hr{
+  color: black;
+  width: 100%;
+}
+
+.fleet-text{
+  text-align: center;
+  font-size: 32px;
+  margin-top: 80px;
+  text-decoration: underline #f7920d;
+  font-family: "DM Serif Display";
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  overflow: hidden;
+  width: 90%;
+  margin:0 auto;
+  padding-top: 30px;
+  height: 80vh;
+
+}
+
+.container button {
+  height: 70px;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.cars-buttons{
+  margin-bottom: 1px;
+}
+
+.selected{
+  background-color: #ffe599;
+  font-weight: bold;
+  text-decoration: underline 0.5px;
+  
+}
+
+.cars-buttons:hover{
+background-color: #afafaf;
+transition: all 0.3s ease-out;
+}
+
+.car-options button {
+  font-size: 20px;
+  font-family: "Poppins";
+  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.button-container button {
+  width: 99.5px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #716d6e;
+  color:#fff;
+  margin-right: 1px;
+}
+
+
+
+.button-container button:hover {
+  background-color: #ffe599;
+  color:#242424;
+  transition: all 0.3s ease-out;
+}
+
+
+.car-image-container {
+  width: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+
+}
+
+.car-image-container img {
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+.fleet-details {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+  width: 33%;
+  text-align: center;
+}
+
+.fleet-details p{
+  font-size: 20px;
+  margin:4px;
+
+}
+
+
+.price-high {
+  background-color: #ffe599;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #716d6e;
+}
+
+.price-high p {
+  font-size: 16px;
+  margin-left: 4px;
+  font-family: "Poppins";
+}
+
+.price-high h2 {
+  font-size: 32px;
+  font-family: "DM Serif Display";
+  font-weight: bold;
+}
+
+
+.reserve-btn{
+  background-color: rgb(247, 146, 13);
+  margin-top: 10px;
+  width:80%;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight:bold ;
+  color: #fff;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.reserve-btn:hover{
+  background-color: #7e7e7e;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 620px){
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .fleet-details{
+    width: 80%;
+  }
+
+  .car-image-container{
+    width: 80%;
+  }
+}

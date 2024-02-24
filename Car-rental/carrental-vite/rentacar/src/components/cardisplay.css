@@ -1,0 +1,54 @@
+
+
+.cars-display{
+  height: 480px; 
+  width: 50%; 
+  position: relative;
+}
+
+
+.promo-text{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight:bold;
+  font-family: 'Poppins', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-align: left;
+}
+
+
+
+.car-name{
+  color:  #242424;
+  margin-top: 5px;
+  font-weight: normal;
+  font-family: 'DM Serif Display', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+
+.controls{
+position: absolute;
+bottom: 35px;
+right:40px;
+font-size: 1.5rem;
+cursor: pointer;
+}
+
+.fa-arrow-left{
+  margin-right: 6px;
+}
+
+.car-img{
+  height: 100%; 
+  max-height: 300px;
+  width: 100%;  
+  
+}
+
+@media screen and (max-width: 400px){
+.controls{
+  right: 20px;
+}
+}
+
+

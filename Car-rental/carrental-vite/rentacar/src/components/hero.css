@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    background-image:linear-gradient(180deg,  #ffc005 ,#ffc005 , rgb(224, 223, 223) ,#ffc005 ,#ffc005); 
+}
+
+.Hero-container{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    padding-top:50px;
+    align-items: flex-start;
+    justify-content: center;
+    gap:12px;
+    height:530px;   
+}
+
+
+.checkin-box{
+   background-color: #fff; 
+   width: 40%;
+   margin:0 auto;
+   height: 450px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.box-elements{
+    width: 90%; 
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.location-pick, .Pickup-date, .Pickup-container, .fleet-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:0 auto;
+}
+
+.location-pick label, .Pickup-date label, .Pickup-container label, .fleet-container label{
+    background-color: #cecece;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-family: 'Trebuchet MS';
+    gap:6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.location-pick select, .fleet-container select{
+width: 50%;
+height: 50px;
+cursor: pointer;
+text-align: center;
+border:1px solid #cecece;
+}
+
+.Pickup-date select, .Pickup-container select{
+width: 25%;
+height:50px;
+cursor: pointer;
+text-align: center;
+border:1px solid #cecece;
+}
+
+.Pickup-date input, .Pickup-container input{
+    width: 25%;
+height:50px;
+cursor: pointer;
+text-align: center;
+border:1px solid #cecece;
+}
+
+.search{
+    width:60%;
+    border:1px solid #cecece;
+    color: #fff;
+    background-color: rgb(247, 146, 13);
+    font-size: 1rem;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    height:50px;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.search:hover{
+    background-color: #7e7e7e;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 670px){
+
+    .location-pick label, .Pickup-date label, .Pickup-container label, .fleet-container label{
+        font-size: 14px;
+    }
+
+    .box-elements{
+        width: 95%;
+    }
+    .checkin-box{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .Pickup-date select, .Pickup-container select,.location-pick select, .fleet-container select,.Pickup-date input, .Pickup-container input{
+        font-size: 13px;
+    }
+    .search{
+        width: 90%;
+    }
+}
