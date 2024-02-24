@@ -14,7 +14,7 @@ function Gallery() {
         <img src='gallery/gym3.jpg' alt='Person working out' />
         <img src='big.jpg' alt='Person working out' />
         <img src='abs.jpg' alt='Person working out' />
-        <img src='power.jpg' alt='Person working out' />
+        <img src='power.png' alt='Person working out' />
         <img src='gallery/gym7.jpg' alt='Person working out' />
         <img src='gallery/gym8.jpg' alt='Person working out' />
         <img src='gallery/gym9.jpg' alt='Person working out' />

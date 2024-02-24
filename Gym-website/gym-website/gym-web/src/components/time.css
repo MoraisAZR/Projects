@@ -4,32 +4,6 @@
     box-sizing: border-box;
 }
 
-.cycling{
-    background-image: url(cycling.png);
-}
-
-.jiujitsu{
-    background-image: url(bjj.png);
-}
-
-.power{
-    background-image: url(power.png);
-}
-
-.yoga{
-    background-image: url(yoga.png);
-}
-
-.abs{
-    background-image: url(abs.png);
-}
-
-
-.full{
-    background-image: url(full.png);
-}
-
-
 
 .time-container {
     display: flex;
@@ -57,9 +31,19 @@ color: #fff;
 }
 
 
-  .cycling, .full {
+  #cycling, #full {
     grid-column: span 2;
   }
+
+.schedule-box{
+    width: 100%;
+}
+
+.schedule-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
   .time-boxes {
@@ -74,7 +58,6 @@ color: #fff;
 .time-boxes > div{
     height: 200px;
     background-size: cover;
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     color: #fff;
