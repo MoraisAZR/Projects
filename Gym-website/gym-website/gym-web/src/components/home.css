@@ -34,13 +34,6 @@
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.gymbox:hover{
-    color: #fff;
-    background-image: url('/gym-website/gym-web/public/background-home/hammer.jpg');
-    background-size: cover;
-    transition: all 0.3s ease;
-}
-
 .gymbox h3{
     text-transform: uppercase;
     font-size: 1.375rem;
