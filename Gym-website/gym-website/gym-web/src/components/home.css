@@ -36,7 +36,7 @@
 
 .gymbox:hover{
     color: #fff;
-    background-image: url('hammer.jpg');
+    background-image: url('/gym-website/gym-web/public/background-home/hammer.jpg');
     background-size: cover;
     transition: all 0.3s ease;
 }
