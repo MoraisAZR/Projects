@@ -16,8 +16,7 @@
     flex-direction: row;
     height: auto;
     width: 90%;
-    margin: 0 auto;
-    
+    margin: 0 auto;   
 }
 
 .gymbox{
@@ -55,7 +54,6 @@
 
     .gymbox h3{
         font-size: 1.125rem;
-        
     }
     
     .gymbox p{
@@ -63,11 +61,9 @@
     }
 }
 
-@media screen and (max-width: 440px){
-    .box-container i{
-        font-size: 1.125rem;
-    }    
-    .gymbox h3{
-        font-size: 0.875rem;
+@media screen and (max-width: 570px){
+    .detail-boxes{
+        display: flex;
+        flex-direction: column;
     }
 }
