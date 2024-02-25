@@ -26,7 +26,7 @@ color: #fff;
   }
 
   .time-effect{
-     width: 50%;
+     width: 60%;
     height: 130px;
     display: block;
 }
@@ -53,7 +53,7 @@ color: #fff;
   }
 
 .time-boxes > div{
-    height: 200px;
+    height: 250px;
     background-size: cover;
     border: 1px solid #ccc;
     border-radius: 8px;
