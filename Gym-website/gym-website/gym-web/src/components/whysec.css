@@ -8,70 +8,70 @@
     height: 600px;
     background-color: black;
     margin-top: 50px;
-display: flex;
-justify-content: center;
-width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .why-container{
     display: flex;
     flex-direction: row;
-    justify-content: space;
+    justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    
+    width: 90%;
+    gap:20px;
+}
+
+.bodybuilder-img{
+    width: 50%;
+    height: 80%;
 }
 
 .bodybuilder-img img{
-    width: 450px;
-    height: 450px;
+    width: 100%;
+    height: 100%;
     border: 6px solid #fff;
-    margin-left: 30px;
-    
+}
+
+.why-text-cont{
+    width: 60%;
 }
 
 .why-text{
     color: #fff;
-    width: 60%;
-    height: 500px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
     z-index: 999;
 }
 
-
-.why-text h3{
-    font-family: "DM Serif Display";
-    
-   
-}
-
-.why-text h1{
+.why-text h1, h3{
     text-align: center;
     font-family: "DM Serif Display";
 }
 
 .why-text p{
     width: 100%;
-    margin: 0 auto;
     padding-top: 10px;
     font-family: "Poppins";
-
 }
 
-.why-text-cont{
-    margin-top: 50px;
+.why-btn{
+    background-color: #242424;
+    color: #fff;
+    height: 50px;
+    width: 30%;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top:20px ;
+    cursor: pointer;
+    border: none;
 }
 
-.gym-element img{
-    height: 75px;
-    width: 80px;  
-    
-}
-.gym-element h3{
-    font-size: 14px;
-    text-align: center;
-    padding-right: 20px;
-    text-decoration: none;
+.why-btn:hover{
+    background-color: #4e4e4e;
+  transition: all 0.2s ease-in-out;
 }
 
 .gym-perks{
@@ -80,53 +80,63 @@ width: 100%;
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
-   
+    width: 100%;
+    height: auto;
+}
+
+.gym-element img{
+    height: 75px;
+    width: 80px;  
+}
+
+.gym-element h3{
+    font-size: 14px;
+    text-align: center;
+    padding-right: 20px;
+    text-decoration: none;
 }
 
 .gym-element{
     display: flex;
     align-items: center;
     flex-direction: row;
-    
 }
 
 .why-effect{
-    width: 65%;
+    width: 100%;
     height: 130px;
     display: block;
-    z-index:0;
-    
+    z-index:0; 
 }
 
-@media screen and (max-width: 1100px){
-    .bodybuilder-img img{
-width: 300px;
-    }
-
-   .why-container{
-    width: 90%;
-   }
-
-    .why-text h1{
-        font-size: 20px;
-    }
+.time-text{
+    width: 100%;
 }
 
-@media screen and (max-width: 940px){
+@media screen and (max-width: 1150px){
     .why-text p{
         font-size: 14px;
     }
 
     .gym-element img{
-        height: 55px;
-        width: 60px;    
+        height: 80%;
+        width: 30%;    
     }
     .gym-element h3{
         font-size: 14px;
     }
+
+    .bodybuilder-img{
+        width: 50%;
+        margin:0 auto;
+    }
     .bodybuilder-img img{
         width: 100%;
-        height: auto;
+        height: 100%;
+            }
+
+            .why-text{
+                width: 100%;
             }
 }
 
@@ -134,4 +144,10 @@ width: 300px;
     .bodybuilder-img {
       display: none;
             }
+
+            .why-text-cont{
+                width: 100%;
+                height: 90%;
+            }
 }
+

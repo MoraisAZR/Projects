@@ -16,7 +16,6 @@ function Footer() {
                 </div>
             <h3>Privacy Policy | @2024 BigBodyGym</h3>
             </div>
-            <div className="rest-footer">
             <div className="footer-classes">
                 <h3>Our classes</h3>
                 <p>Cycling classes</p>
@@ -36,8 +35,6 @@ function Footer() {
             </div>
             </div>
         </div>
-    </div>
-    
     </>
   )
 }

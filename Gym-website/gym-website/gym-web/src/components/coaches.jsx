@@ -59,13 +59,10 @@ function Coaches() {
       <i className="fab fa-twitter" />
       <i className="far fa-envelope" /> 
           </div>
-        
       </div>
       </div>
         </div>
-
     </div>
-    
     </>
   )
 }

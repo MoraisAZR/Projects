@@ -9,31 +9,31 @@
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 50px;
+    gap:20px;
 }
 
 .contacts-section h1{
     text-align: center;
     font-family: "DM Serif Display";
     text-transform: capitalize;
-   
 }
+
 .contacts-container{
-    width: 70%;
+    width: 50%;
     margin-right: 20px;
 }
 
 .contacts-container p{
-    width: 80%;
+    width: 90%;
     font-family: "Poppins";
     margin: 0 auto;
-    padding: 6px;
 }
 
 .contacts-container h1{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -41,11 +41,16 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
     align-items: flex-start;
-    margin-top: 20px;
-    width: 80%;
+    padding-top: 20px;
+    width: 100%;
     margin: 0 auto;
+    gap:10px;
+}
+
+.contact-infor p{
+    width: 80%;
+    height: auto;
 }
 
 .contact-infor h3{
@@ -55,28 +60,30 @@
 .feedback-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 50%;
-
 }
 
 .feedback-container input{
     background-color: #f7f7f7;
     margin: 10px;
-padding-left: 10px;
+    padding-left: 10px;
 }
 
 .feedback-input{
-    height: 60px;
-    
+    height: 60px; 
+    width: 90%;
 }
+
 .feedback-box{
     height: 150px;
+    width: 90%;
 }
 
 .feedback-container button{
     background-color: #bb2d2d;
     height: 40px;
-    width: 100px;
+    width: 35%;
     margin: 0 auto;
     color:#fff;
     text-transform: uppercase;
@@ -90,70 +97,36 @@ padding-left: 10px;
 }
 
 @media screen and (max-width: 650px){
-    .contacts-section h1{
-        font-size: 18px;
+    .contacts-section{
+        display: flex;
+        flex-direction: column;
     }
 
+    .contacts-container{
+        width: 100%;
+    }
+
+    .feedback-container{
+        width: 100%;
+    }
+    
+    .contacts-section h1{
+        font-size: 20px;
+    }
+
+    .contact-infor{
+        width: 100%;
+    }
+    .contact-infor p{
+        width: 100%;
+    }
     .contacts-section p{
-        font-size: 14px;
+        font-size: 16px;
+        word-wrap: break-word;
     }
 
     .contacts-section h3{
-        font-size: 16px;
+        font-size: 18px;
         }
-       
 }
 
-@media screen and (max-width: 580px){
-    .contacts-section h1{
-        font-size: 16px;
-    }
-
-    .contacts-section p{
-        font-size: 12px;
-    }
-
-    .contacts-section h3{
-        font-size: 14px;
-        }
-
-        .feedback-container button{
-            height: 30px;
-            width: 90px;
-        }
-    }
-
-    @media screen and (max-width: 480px){
-        .contacts-section h1{
-            font-size: 14px;
-        }
-    
-        .contacts-section p{
-            font-size: 10px;
-        }
-    
-        .contacts-section h3{
-            font-size: 12px;
-            }    
-    }
-
-    @media screen and (max-width: 370px){
-        .contacts-section h1{
-            font-size: 12px;
-        }
-    
-        .contacts-section p{
-            font-size: 8px;
-        }
-    
-        .contacts-section h3{
-            font-size: 10px;
-            }    
-            .feedback-input{
-                height: 40px;
-                
-            }
-            .feedback-box{
-                height: 110px;
-            }
-    }

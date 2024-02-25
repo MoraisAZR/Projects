@@ -15,7 +15,6 @@ const BMICalculator = () =>{
             const bmiVal = weightKgs / (heightMts * heightMts);
             setBmi(bmiVal.toFixed(2));
 
-
             if(bmiVal < 18.5){
                 setCategory("Underweight");
             }

@@ -1,6 +1,6 @@
 .bmi-section{
     background-color: black;
-    height: 300px;
+    height: 60vh;
     margin-top: 50px;
     padding-top: 50px;
     display: flex;
@@ -9,15 +9,20 @@
     color: #fff;
 }
 
-
 .bmi-output{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    padding-top: 20px;
-    
+    padding-top: 20px;   
 }
 
+.bmi-input{
+    display: flex;
+    gap:10px;
+}
+
+.bmi-container{
+  height: 100%;
+}
 
 .bmi-container input{
     background-color: black;
@@ -25,14 +30,15 @@
     border: 1px solid #cccccc;
     border-radius: 4px;
     height: 30px;
-    margin-right: 10px;
+    width: 30%;
     padding-left: 10px;
 }
 
 .bmi-info{
     width: 60%;
+    height: 80%;
+    margin:0 auto;
     text-align: center;
-  
 }
 
 .bmi-info p{
@@ -57,47 +63,36 @@
     margin-bottom: 20px;
 }
 
-
-
-
 .bmi-button{
     background-color: #242424;
     color: #fff;
     height: 40px;
-    width: 150px;
+    width: 30%;
     font-family: "Poppins";
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-
 }
 
-@media screen and (max-width: 668px){
-
-    .bmi-section p{
-        font-size: 14px;
-    }
-
-    .bmi-section {
-        padding-top: 20px;
-    }
-}
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 580px){
      .bmi-section p{
         font-size: 14px;
         width: 90%;
     }
 
+    .bmi-section{
+        height: 40vh;
+        padding-top: 20px;
+    }
+
+    .bmi-info{
+        width: 70%;
+    }
+
     .bmi-section h1{
         font-size: 22px;
     }
-    .bmi-container input{
-        height: 20px;
-        width: 100px;
-    }
-
 }
 
 @media screen and (max-width: 380px){
@@ -107,5 +102,10 @@
 
     .bmi-section h1{
         font-size: 20px;
+    }
+
+    .bmi-button{
+        font-size: 12px;
+        width: 40%;
     }
 }

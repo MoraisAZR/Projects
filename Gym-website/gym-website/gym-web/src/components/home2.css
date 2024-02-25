@@ -9,12 +9,16 @@
     flex-direction: row;
     align-items:center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
 }
 
 .who-container{
     width: 80%;
     margin:0 auto;
+}
+
+.who-section{
+    width: 100%;
 }
 .who-container h1{
     text-align: center;
@@ -23,7 +27,6 @@
 .who-boxes{
     display: flex;
     align-items: center;
-    
 }
 
 .box{
@@ -31,21 +34,23 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    width: 60%;
+    height: 200px;
+    margin:0 auto;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .box img{
  height: 85px;
- width: 100px;   
+ width: 70%;   
 }
 
 .box h3{
-    width: 60%;
+    width: 80%;
+    margin:0 auto;
     font-family: "DM Serif Display";
     text-transform: uppercase;
-   text-align: center;
-   
+   text-align: center;   
 }
 
 .who-text{
@@ -57,7 +62,7 @@
     background-color: #242424;
     color: #fff;
     height: 50px;
-    width: 150px;
+    width: 30%;
     font-family: "Poppins";
     font-weight: bold;
     text-transform: uppercase;
@@ -87,6 +92,7 @@
     display: flex;
     align-items: center; 
     width: 50%;
+    margin:0 auto;
 }
 
 .strech-img img{
@@ -118,32 +124,11 @@
     .strech-img {
         display: none;
     }
-
-    .home2-container{
-        height: 60vh;
-    }
   }
 
-  @media screen and (max-width: 590px){
-    .box h3{
-        font-size: 16px;
-    }
-    .box img{
-        height: 65px;
-        width: 80px;   
-       }
-
-       .box{
-        height: 170px;
+  @media screen and (max-width: 620px){
+    .box h3 {
+        font-size: 14px;
         width: 80%;
-       }
-
-       .who-text p{
-        margin: 10px;
-       }
-
-    .who-container {
-        width: 90%;
-        margin: 0 auto; 
     }
   }

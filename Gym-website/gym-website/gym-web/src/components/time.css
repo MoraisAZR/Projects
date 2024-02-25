@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-
 .time-container {
     display: flex;
     justify-content: center;
    margin-top: 20px;
+   width: 100%;
   }
 
   .time-text{
@@ -24,12 +24,12 @@ color: #fff;
     text-transform: uppercase;
     font-family: "DM Serif Display";
   }
-.time-effect{
+
+  .time-effect{
      width: 50%;
     height: 130px;
     display: block;
 }
-
 
   #cycling, #full {
     grid-column: span 2;
@@ -45,15 +45,12 @@ color: #fff;
     object-fit: cover;
 }
 
-
   .time-boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     width: 90%;
     gap: 15px;
-
   }
-  
 
 .time-boxes > div{
     height: 200px;
@@ -78,21 +75,11 @@ color: #fff;
     padding: 10px;
     border-radius: 0 0 8px 8px;
     color: #fff;
+    height: 40px;
 }
 
 .time-boxes h2{
-    margin-top: 102px;
-}
-
-@media screen and (max-width: 920px){
-    .time-container {
-       width: 100%;
-      }
-
-      .time-boxes p{
-        font-size: 10px;
-        height: 40px;
-    }
+   color:yellow
 }
 
 @media screen and (max-width: 750px){
@@ -104,5 +91,4 @@ color: #fff;
         grid-template-columns: repeat(2, 1fr); 
         gap:10px;
       }
-
 }

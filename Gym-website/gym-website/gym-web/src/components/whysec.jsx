@@ -34,7 +34,7 @@ function Whysection() {
                     <h3>Free fitness training</h3>
                     </div>    
                 </div>
-              <Link to="/classes"> <button className='home2-btn'>See classes<i className="fa-solid fa-arrow-right"/></button></Link>
+              <Link to="/classes"> <button className='why-btn'>See classes<i className="fa-solid fa-arrow-right"/></button></Link>
             </div>
             </div>
         </div>

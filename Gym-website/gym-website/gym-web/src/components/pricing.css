@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
-.pricing-text{
-    text-decoration: 2px underline #bb2d2d ;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "DM Serif Display";  
-}
 .price-container{
     display: flex;
     flex-direction: row;
@@ -28,22 +20,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     height: 450px;
     width: 80%;
-    
 }
-
 
 .price-box img{
     height: 170px;
     width: 100%;
   position: relative;
-
 }
 
 .price-info{
     position: absolute;
     background-color: #fff;
     top:135px;
-    height: 250px;
     right:0;
     left:0;
     margin:0 auto;
@@ -69,15 +57,13 @@
 .price-info span{
     font-family: "DM Serif Display";
     font-size: 36px;
-
 }
-
 
 .price-button{
     background-color:#bb2d2d ;
     color: #fff;
     height: 40px;
-    width: 150px;
+    width: 80%;
     margin-top: 10px;
     font-family: "Poppins";
     font-weight: bold;
@@ -85,6 +71,7 @@
     cursor: pointer;
     border: none;
 }
+
 .price-button:hover{
     background-color: #bb2d2d;
     opacity: 0.8;
@@ -98,20 +85,6 @@
     .price-info p{
         font-size: 12px;
         }
-
-    .price-info{
-        width: 100%;
-    }
-
-    .price-box{
-        width: 100%;
-    }
-
-    .price-button{
-        height: 30px;
-        width: 120px;
-        font-size: 12px;
-    }
 }
 
 @media screen and (max-width: 480px){
@@ -131,9 +104,9 @@
     }
 
     .price-button{
-        height: 25px;
-        width: 80%;
-        font-size: 50%;
+        height: 30px;
+        width: 90%;
+        font-size: 10px;
     }
     
 }
