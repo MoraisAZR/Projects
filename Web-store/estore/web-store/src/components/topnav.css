@@ -27,7 +27,6 @@
 
 }
 
-
 .categories{
     display: flex;
     flex-direction: row;
@@ -119,7 +118,6 @@ color:#fff;
     border-radius: 6px;
     height:80px;
     margin-top: 20px;
-
 }
 
 .cart-main{
@@ -254,88 +252,75 @@ padding-top: 10px;
     font-family: sans-serif;
     cursor: pointer;
     margin:0 auto;
-
-
 }
-
-
-@media only screen  and (max-width:1784px){
-    .cart-items-container{
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 800px){
-.side-menu{
-    width: 40%;
-}
-}
-
-@media screen and (max-width: 500px){
-   
+@media screen and (max-width: 850px){
     .side-menu{
-        width: 50%;
+        width: 40%;
     }
-
-.item-details{
-    font-size: 14px;
-}
-
-.cart-item{
-    width: 100%;
-}
-
-    .cart-image{
-        height: 70%;
     }
-
-    .item-btns button,#mid-btn{
-        height: 15px;
-        width: 20px;
-        border: none;
-    }
-    .categories h2{
-        font-size: 18px;
-    }
-
-    .topnav-container h1{
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .no-items-text h2{
-        font-size: 20px;
-    }
-    .no-items-text p{
+    
+    @media screen and (max-width: 520px){
+        .side-menu{
+            width: 50%;
+        }
+    
+    .item-details{
         font-size: 14px;
     }
-    .no-items-text button{
-        height: 30px;
-        width: 90px;
+    
+    .cart-item{
+        width: 100%;
     }
-
-    .cart-main{
-        font-size: 13px;
-        word-wrap: break-word;
+    
+        .cart-image{
+            height: 70%;
+        }
+    
+        .item-btns button,#mid-btn{
+            height: 15px;
+            width: 20px;
+            border: none;
+        }
+        .categories h2{
+            font-size: 18px;
+        }
+    
+        .topnav-container h1{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    
+        .no-items-text h2{
+            font-size: 20px;
+        }
+        .no-items-text p{
+            font-size: 14px;
+        }
+        .no-items-text button{
+            height: 30px;
+            width: 90px;
+        }
+    
+        .cart-main{
+            font-size: 13px;
+            word-wrap: break-word;
+        }
+    
+        .cart-checkout button{
+            height: 30px;
+            width: 90px;
+            font-size: 10px; 
+        }
     }
-
-    .cart-checkout button{
-        height: 30px;
-        width: 90px;
-        font-size: 10px; 
+    
+    @media screen and (max-width: 370px){
+        .categories h2{
+            font-size: 16px;
+        }
+    
+        .topnav-container h1{
+            font-size: 16px;
+            font-weight: bold;
+        }
     }
-}
-
-@media screen and (max-width: 370px){
-    .categories h2{
-        font-size: 16px;
-    }
-
-    .topnav-container h1{
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-   
-}
 

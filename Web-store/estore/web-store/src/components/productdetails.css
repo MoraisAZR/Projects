@@ -40,7 +40,6 @@
     width: 80%;
     font-family: sans-serif;
     font-weight: bold;
-
 }
 
 .quantity-box{
@@ -69,7 +68,6 @@
     font-size: 18px;
     cursor: pointer;
 }
-
 
 .cart-btns{
     display: flex;
@@ -105,7 +103,6 @@
     color:#fff;
     border: none;
 }
-
 
 @media screen and (max-width: 1056px){
     .cart-btns button{
@@ -160,7 +157,7 @@
     }
 
     .quantity-btns button{
-        height: 15px;
+        height: 20px;
         width: 30px;
         font-size: 12px;
     }

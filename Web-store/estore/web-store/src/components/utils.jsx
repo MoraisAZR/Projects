@@ -87,7 +87,7 @@ export const products = [
     },
     {
         id:11,
-        name:"Picasso Styled Lamp",
+        name:"Picasso Lamp",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam possimus quia veritatis sapiente nesciunt adipisci earum corrupti unde enim? Nihil quis consequatur libero quaerat accusamus hic inventore provident quia?",
         price:"50",
         img:"lamptr.png",
@@ -127,7 +127,7 @@ export const products = [
     },
     {
         id:17,
-        name:"Rubber wrist watch",
+        name:"Rubber watch",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam possimus quia veritatis sapiente nesciunt adipisci earum corrupti unde enim? Nihil quis consequatur libero quaerat accusamus hic inventore provident quia?",
         price:"15",
         img:"watch.png",
@@ -135,7 +135,7 @@ export const products = [
     },
     {
         id:18,
-        name:"Skin deep moisturiser ",
+        name:"Skin moisturiser ",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam possimus quia veritatis sapiente nesciunt adipisci earum corrupti unde enim? Nihil quis consequatur libero quaerat accusamus hic inventore provident quia?",
         price:"29",
         img:"skinmost.png",
@@ -143,7 +143,7 @@ export const products = [
     },
     {
         id:19,
-        name:"Clean shave cream",
+        name:"shave cream",
         description:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere nam possimus quia veritatis sapiente nesciunt adipisci earum corrupti unde enim? Nihil quis consequatur libero quaerat accusamus hic inventore provident quia?",
         price:"15",
         img:"smoothskin.png",

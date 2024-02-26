@@ -74,22 +74,6 @@ max-height: 300px;
 
 @media screen and (max-width: 555px){
     .environment-msg h2{
-        font-size: 16px;
-    }
-
-    .environment-msg p{
-        font-size: 12px;
-        width: 100%;
-    }
-
-    .environment-msg button{
-        height: 30px;
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 555px){
-    .environment-msg h2{
         word-wrap: break-word;
         text-align: center;
     }
@@ -102,5 +86,9 @@ max-height: 300px;
     .environment-msg button{
         height: 25px;
         width: 80px;
+    }
+
+    .environment-container{
+        width: 90%;
     }
 }

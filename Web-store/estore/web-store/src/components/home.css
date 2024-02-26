@@ -16,7 +16,6 @@
     padding-top: 50px;
 }
 
-
 .box-infor{
     position:absolute;
     bottom: 20px;
@@ -28,9 +27,8 @@
     display: flex;
     flex-direction: column;
     font-family: 'Trebuchet MS';
-   
-    
 }
+
 .image-container{
     position: relative;
     display: inline-block;
@@ -46,14 +44,12 @@
 .two-box{
     display: flex;
     flex-direction: column;
-    
 }
 
 .two-box img{
     width: 100%;
     height: 198px;
 }
-
 
 @media screen and (max-width: 400px){
     .box-infor{

@@ -24,7 +24,7 @@ const ProductDetails = ({addToCart, removeFromCart,totalPrice,setTotalPrice,coun
     }
 
     const removeCount = () =>{
-        const newCount = count -1 >= 0 ? count - 1 : 0;
+        const newCount = count -1 >= 1 ? count - 1 : 1;
         setCount(newCount);
         setTotalPrice((newCount * (product.price)))
         removeFromCart(product.id,count);
@@ -36,6 +36,7 @@ const ProductDetails = ({addToCart, removeFromCart,totalPrice,setTotalPrice,coun
         id:product.id,
         name:product.name,
         quantity:count,
+        price: parseInt(product.price),
         totalPrice: totalPrice,
         img: product.img,
       };

@@ -21,13 +21,13 @@ function Topnav({cartItems, setCartItems }) {
 
   const addCount = (itemId) =>{
     const upgradedCart = cartItems.map((item) =>
-    item.id === itemId ? {...item, quantity:item.quantity + 1} : item);
+    item.id === itemId ? {...item, quantity:item.quantity + 1, totalPrice: item.price * (item.quantity + 1) } : item);
     setCartItems(upgradedCart);
   }
 
   const removeCount = (itemId) =>{
     const upgradedCart = cartItems.map((item) =>
-    item.id === itemId && item.quantity >0 ? {...item, quantity:item.quantity -1 } : item );
+    item.id === itemId && item.quantity >0 ? {...item, quantity:item.quantity -1, totalPrice: item.price * (item.quantity - 1) } : item );
 
     if(upgradedCart.find((item) => item.id === itemId).quantity <= 0){
       removeItem(itemId);
@@ -38,7 +38,7 @@ function Topnav({cartItems, setCartItems }) {
 
   const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
 
-  const totalPriceAllItems = cartItems.reduce((total,item) => total + item.quantity * item.totalPrice, 0) 
+  const totalPriceAllItems = cartItems.reduce((total,item) => total + item.quantity * item.price, 0) 
 
 
   useEffect(() =>{
@@ -100,7 +100,7 @@ function Topnav({cartItems, setCartItems }) {
                     <div className="details-container">
                       <div className="item-details">
                         <h3>{item.name}</h3>
-                        <p>{ item.quantity *item.totalPrice}€</p>
+                        <p>{item.totalPrice}€</p>
                       </div>
                       <div className="item-options">
                         <div className="item-btns">

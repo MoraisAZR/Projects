@@ -2,4 +2,13 @@ body{
   overflow-x: hidden;
   margin:0;
   padding: 0;
+  
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgray;
+  border-radius: 6px;
 }
