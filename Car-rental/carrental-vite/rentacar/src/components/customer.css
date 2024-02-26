@@ -4,10 +4,8 @@
    margin-top: 16px;
    margin-bottom: 16px;
    font-size:2rem;
-    font-family: "DM Serif Display";
-    
+    font-family: "DM Serif Display";    
 }
-
 
 .text-box-container {
   width: 90%; 
@@ -19,15 +17,12 @@
   margin-top: 10px;
   } 
 
-
-
   .text-box{
     text-align: center;
     background-color:#ededed;
     margin-left: 10px;
     margin-right: 10px;
     height:250px;
-   
   }
 
   .text-box h2{
@@ -35,20 +30,18 @@
     margin-bottom: 10px;
     font-size:2rem;
     font-family: "DM Serif Display";
-
   }
 
   .text-box p{
     font-size:1.25rem;
     margin:10px;
     font-family: "Poppins";
-
   }
+
 .fa-tag, .fa-infinity, .fa-phone, .fa-car-burst{
     color: #f7920d ;
     margin-right: 4px;
   }
-  
 
   @media (max-width: 1000px){
     .text-box-container{

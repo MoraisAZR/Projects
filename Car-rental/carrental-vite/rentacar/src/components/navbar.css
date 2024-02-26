@@ -30,8 +30,6 @@
 .nav-item {
     display: inline-block;
     margin-right: 10px; 
-    
-
 }
 
 .nav-link {
@@ -43,7 +41,6 @@
     font-family: "Poppins",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     margin-right: 20px;
-
 }
 
 .nav-link:hover{
@@ -51,14 +48,12 @@
     transition: all 0.2s ease-out;
 }
 
-
 .nav-menu {
     display: flex;
     text-align: center;
     width: 700px;
     justify-content: end;
     margin-right: 20px;
-    
   }
 
   .fa-bars{
@@ -111,9 +106,6 @@
         display: block;
         margin-top:0;
        overflow-x: hidden;
-       
-        
-        
     }
   
     .nav-link:hover {
@@ -121,7 +113,6 @@
       border-radius: 0;
       border-top: 4px solid rgb(247, 146, 13);
     }
-  
   
    .menu-icon {
       display: block;
@@ -143,8 +134,7 @@
     .fa-bars{
         display: flex;
       }
-     
-   
   }
-
- 
+  .logo{
+    margin-left: 0;
+  }
