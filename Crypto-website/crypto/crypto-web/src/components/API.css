@@ -17,4 +17,11 @@
 }
 
 
-
+@media screen and (max-width: 480px){
+    .home-item img{
+        height: 50px;
+    }
+    .home-item{
+        font-size: 14px;
+    }
+  }

@@ -30,7 +30,6 @@ function About() {
                 </div>
             </div>
         </div>
-        
         <div className="about-boxes">
             <div className="info-box">
 <i className="fa-solid fa-phone" />

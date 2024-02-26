@@ -14,7 +14,7 @@ function Home() {
         <img src="doge.png" alt="Dogecoin" />
       </div>
       <div className="crypto-text">
-        <h2>Start Investing<br /> <span>In Crypto</span> </h2>
+        <h2 className="text-6xl font-bold ">Start Investing<br /> <span>In Crypto</span> </h2>
         </div>
         <div className="img-box">
         <img src="Bitcoin.png" alt="Bitcoin" />

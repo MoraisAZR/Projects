@@ -1,71 +1,113 @@
+ul{
+  padding:0;
+  margin:0;
+}
 
-
-.topnav-container{
-    width: 100%;
-    margin:0 auto;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 80px;
-    color:#fff;
-    font-family: sans-serif;
-    background-color: black;
-    position: fixed;
-    left:0;
-    right:0;
+.navbar{
+    position: sticky;
     top:0;
     z-index: 999;
-}
-
-.menu-icon {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    right: 15px;
-}
-
-.menu-icon i{
-    display: none;
-}
-
-.topnav-container>div{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-}
-
-
-
-@media screen and (max-width: 768px) {
-   .socials i{
-    display: none;
-   }
-
-   .menu-icon i{
-    display: block;
-}
-
-
-
-.search-section.active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    height: 100vh;
     background-color: black;
-    color: white;
-    text-align: center;
-    z-index: 998;
+    width: 100%;
+    height: 100px;
+  }
+  .navbar-container{
+    color:#fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Trebuchet MS';
+    width: 95%;
+    margin:0 auto;
+  }
+  
+  .nav-item{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 22px;
     cursor: pointer;
   }
-
+  
+  .nav-link:hover{
+    text-decoration:underline purple;
+    transition: all 0.2s ease-in;
   }
+  
 
-
+    .fa-bars{
+      display: none;
+    }
+  
+    .fa-times {
+      display: none;
+    }
+  
+  
+  
+    @media screen and (max-width: 960px) {
+      .nav-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: 80px;
+          left: -100%;
+          opacity: 1;
+          transition: all 0.5s ease;
+         
+      }
+    
+      .nav-menu.active {
+          background: black;
+          text-align: center;
+          left: 0;
+          opacity: 1;
+          transition: all 0.5s ease;
+          z-index: 1;
+          height: 100vh;
+      }
+      .nav-link {
+          text-align: center;
+          display: block;
+         overflow-x: hidden;  
+         padding:20px;
+      }
+    
+      .nav-link:hover {
+        background-color: rgba(161, 161, 161, 0.2);
+        border: 4px solid #fff;
+      }
+    
+     .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        margin-top: 6px;
+        cursor: pointer;
+        text-align: center;
+      }
+    
+      .fa-times {
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        padding-top: 6px;
+        
+      }
+    
+      .fa-bars{
+          display: flex;
+          padding-top: 6px;
+          color: #fff;
+        }
+       
+     
+    }

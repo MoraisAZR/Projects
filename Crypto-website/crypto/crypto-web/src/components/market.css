@@ -2,7 +2,6 @@
     text-align: center;
     color: #fff;
     font-family: 'Trebuchet MS';
-
 }
 
 
@@ -11,7 +10,6 @@
     margin:0 auto;
     border-collapse: collapse;
     color:#fff;
-    height: 100vh;
 }
 
 .information-container thead{
@@ -20,7 +18,6 @@
     width: 100%;
     height: 40px;
 }
-
 
 .information-display td{
     width: 20%;
@@ -31,7 +28,6 @@
 .information-display:hover{
     background-color: #00001d88;
 }
-
 
 .coin-box{
     display: flex;
@@ -76,4 +72,25 @@
     background:linear-gradient(142deg, rgba(255,0,215,1) 0%, rgba(6,15,255,1) 100%);
     color:#fff;
     transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 660px){
+    .coin-detail img{
+        height: 30px;
+    }
+    .coin-detail{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .information-display td{
+        font-size: 12px;
+    }
+
+    .information-container thead{
+        font-size: 14px;
+        height: 30px;
+    }
+
 }

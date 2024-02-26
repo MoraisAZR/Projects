@@ -15,7 +15,7 @@ function Footer() {
         <img src="Bitcoin.png" alt="Bitcoin" />
       </div>
       </div>
-      <button>Join the Discord</button>
+      <button className='footer-btn'>Join the Discord</button>
       <div className="footer-socials">
       <i className="fa-brands fa-twitter"/>
       <i className="fa-brands fa-discord"/>

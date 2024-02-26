@@ -1,5 +1,5 @@
 .about-section{
-    width: 80%;
+    width: 100%;
     margin:0 auto;
     color:#fff;
     height: 100vh;
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .about-boxes{
@@ -43,11 +44,30 @@
 }
 
 .info-text{
-    width: 70%;
+    width: 80%;
     margin:0 auto;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .info-text h3{
     font-family: 'Trebuchet MS';
+}
+
+@media screen and (max-width: 700px){
+.about-container{
+    flex-direction: column;
+}
+.about-section{
+    height: 180vh;
+}
+
+.info-text{
+    font-family: 14px;
+}
+
+.info-text h3{
+    font-size:18px;
+}
+
 }
