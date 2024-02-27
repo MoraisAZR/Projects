@@ -95,7 +95,7 @@
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 410px){
     .bmi-section p{
         font-size: 12px;
     }

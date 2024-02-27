@@ -122,7 +122,7 @@
     }
     .contacts-section p{
         font-size: 16px;
-        word-wrap: break-word;
+        word-break: break-all;
     }
 
     .contacts-section h3{

@@ -109,7 +109,6 @@ align-items: center;
 .logo{
   display: flex;
 }
-
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -133,18 +132,13 @@ align-items: center;
         height: 100vh;
     }
 
-  
-  
     .nav-link {
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: block;
         margin-top:0;
-       overflow-x: hidden;
-       
-        
-        
+       overflow-x: hidden;        
     }
   
     .nav-link:hover {
@@ -152,7 +146,6 @@ align-items: center;
       border-radius: 0;
       border-top: 4px solid black;
     }
-  
   
    .menu-icon {
       display: block;
@@ -178,8 +171,6 @@ align-items: center;
         padding-top: 6px;
         color: #fff;
       }
-     
-   
   }
 
   @media screen and (max-width: 520px){

@@ -40,7 +40,7 @@ border-radius: 10px;
 
 .class-infor{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%,50%);
     text-align: center;
@@ -80,7 +80,7 @@ border-radius: 10px;
     }
 
     .class-infor{
-        top:40%;
+        top:30%;
         width: 100%;
     }
 }
@@ -89,12 +89,21 @@ border-radius: 10px;
     .class-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        width: 100%;
     }
 
     .class-infor{
         top:50%;
+        left:60%;
         padding:0;
+    }
+}
+@media screen and (max-width: 450px){
+    .class-infor h3{
+        font-size: 16px;
+    }
+
+    .class-infor p{
+        font-size: 14px;
     }
 }
 

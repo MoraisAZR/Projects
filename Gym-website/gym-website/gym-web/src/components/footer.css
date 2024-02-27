@@ -109,4 +109,8 @@
 .working-hours p, .footer-classes p{
     width: 80%;
 }
+
+.footer-section{
+    height: 60vh;
+}
 }

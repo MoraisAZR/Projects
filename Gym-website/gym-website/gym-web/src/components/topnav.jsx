@@ -67,7 +67,6 @@ window.addEventListener('resize', showButton);
           <div className="login-nav">
 <i className="fa-regular fa-user" />
 <button>Log in</button>
-
           </div>
         </div>
       </div>
