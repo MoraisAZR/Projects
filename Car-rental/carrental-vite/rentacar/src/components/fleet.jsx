@@ -4,89 +4,10 @@ import { useState } from 'react';
 import { Link  } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { carsmodel } from "./carsmodels"
 
 
 const Fleet = () =>{
-    const carsmodel = [
-        {
-            name:"Volkswagen Golf",
-            price:"12",
-            doors:"4",
-            seats:"5",
-            luggage:"2 Suitcases/2 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"21 years",
-            image:"/images/golf.png"
-        },
-        {
-            name:"Audi A1",
-            price:"24",
-            doors:"4",
-            seats:"5",
-            luggage:"2 Suitcases/2 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"25 years",
-            image:"/images/audia1.png"
-        },
-        {
-            name:"Renault Clio",
-            price:"18",
-            doors:"4",
-            seats:"5",
-            luggage:"2 Suitcases/2 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"21 years",
-            image:"/images/renault.png"
-        },
-        {
-            name:"Mercedes-Benz GLK",
-            price:"30",
-            doors:"4",
-            seats:"5",
-            luggage:"3 Suitcases/3 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"25 years",
-            image:"/images/mercedes.png"
-        },
-        {
-            name:"Mini Hatch",
-            price:"10",
-            doors:"4",
-            seats:"5",
-            luggage:"1 Suitcases/1 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"18 years",
-            image:"/images/mini1.png"
-        },
-        {
-            name:"Skoda Fabia",
-            price:"20",
-            doors:"4",
-            seats:"5",
-            luggage:"2 Suitcases/2 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"21 years",
-            image:"/images/skoda1.png"
-        },
-        {
-            name:"Kia Picanto",
-            price:"12",
-            doors:"4",
-            seats:"5",
-            luggage:"2 Suitcases/2 bags",
-            Transmission:"Manual",
-            conditioning:"Yes",
-            minage:"18 years",
-            image:"/images/kia.png"
-        },
-    ];
-
     const [selectedCar, setSelectedCar] = useState(carsmodel[0]);
     const [startIndex, setStartIndex] = useState(0);
     const[carClicked, setCarClicked] = useState(null);
@@ -147,9 +68,7 @@ const Fleet = () =>{
                 <p>Air conditioner: {selectedCar.conditioning}</p><hr/>
                 <p>Minimum age: {selectedCar.minage}</p>
                 <Link to="home" spy={true} smooth={true} offset={0} duration={500} style={{ display: 'contents' }}>
-                  <button className='reserve-btn'>
-                <FontAwesomeIcon icon={faCalendarDays} /> Reserve now
-                </button>
+                  <button className='reserve-btn'> Reserve now </button>
                   </Link>
               </div>
           </>

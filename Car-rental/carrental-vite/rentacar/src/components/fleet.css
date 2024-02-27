@@ -4,7 +4,6 @@ ul {
   margin: 0;
 }
 
-
 hr{
   color: black;
   width: 100%;
@@ -28,7 +27,6 @@ hr{
   margin:0 auto;
   padding-top: 30px;
   height: 80vh;
-
 }
 
 .container button {
@@ -38,7 +36,6 @@ hr{
   cursor: pointer;
 }
 
-
 .cars-buttons{
   margin-bottom: 1px;
 }
@@ -47,7 +44,6 @@ hr{
   background-color: #ffe599;
   font-weight: bold;
   text-decoration: underline 0.5px;
-  
 }
 
 .cars-buttons:hover{
@@ -58,7 +54,6 @@ transition: all 0.3s ease-out;
 .car-options button {
   font-size: 20px;
   font-family: "Poppins";
-  
 }
 
 .button-container {
@@ -76,14 +71,11 @@ transition: all 0.3s ease-out;
   margin-right: 1px;
 }
 
-
-
 .button-container button:hover {
   background-color: #ffe599;
   color:#242424;
   transition: all 0.3s ease-out;
 }
-
 
 .car-image-container {
   width: 50%; 
@@ -91,14 +83,11 @@ transition: all 0.3s ease-out;
   align-items: center;
   justify-content: center;
   overflow: hidden; 
-
 }
 
 .car-image-container img {
   width: 100%;
   overflow: hidden;
-
-
 }
 
 .fleet-details {
@@ -114,9 +103,7 @@ transition: all 0.3s ease-out;
 .fleet-details p{
   font-size: 20px;
   margin:4px;
-
 }
-
 
 .price-high {
   background-color: #ffe599;
@@ -140,7 +127,6 @@ transition: all 0.3s ease-out;
   font-weight: bold;
 }
 
-
 .reserve-btn{
   background-color: rgb(247, 146, 13);
   margin-top: 10px;
@@ -153,8 +139,6 @@ transition: all 0.3s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
- 
-
 }
 
 .reserve-btn:hover{
