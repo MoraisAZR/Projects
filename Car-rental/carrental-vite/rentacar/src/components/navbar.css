@@ -20,7 +20,6 @@
     text-decoration:none;
     margin-left: 20px;
     font-family: "Poppins",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
 }
 
 .fa-car{
@@ -88,7 +87,6 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-       
     }
   
     .nav-menu.active {
@@ -97,6 +95,7 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        height: 100vh;
     }
   
     .nav-link {
