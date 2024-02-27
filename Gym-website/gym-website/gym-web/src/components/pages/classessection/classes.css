@@ -15,7 +15,7 @@
 .class-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,0fr);
+    grid-template-rows: repeat(3,1fr);
     gap: 6px;
     width: 80%;
     padding-top: 30px;
@@ -40,9 +40,9 @@ border-radius: 10px;
 
 .class-infor{
     position: absolute;
-    top: 30%;
+    top: 80%;
     left: 50%;
-    transform: translate(-50%,50%);
+    transform: translate(-50%,-50%);
     text-align: center;
     color: #fff;
     text-align: left;
@@ -78,11 +78,6 @@ border-radius: 10px;
     .class-container{
         width: 90%;
     }
-
-    .class-infor{
-        top:30%;
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 650px){
@@ -90,18 +85,11 @@ border-radius: 10px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
-
-    .class-infor{
-        top:50%;
-        left:60%;
-        padding:0;
-    }
 }
 @media screen and (max-width: 450px){
     .class-infor h3{
         font-size: 16px;
     }
-
     .class-infor p{
         font-size: 14px;
     }
