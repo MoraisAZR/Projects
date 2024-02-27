@@ -25,14 +25,12 @@
     width: 80%;
 }
 
-
 .crypto-text span{
     background: linear-gradient(142deg, rgba(255,0,215,1) 0%, rgba(6,15,255,1) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 80px;
-    
 }
 
 .img-box{
@@ -40,7 +38,6 @@
     width: 100px;
     animation: MoveAround 3s infinite ;
     margin-bottom: 60px;
-    
 }
 
 .img-box img{

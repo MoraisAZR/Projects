@@ -45,8 +45,6 @@ ul{
       display: none;
     }
   
-  
-  
     @media screen and (max-width: 960px) {
       .nav-menu {
           display: flex;
@@ -100,7 +98,6 @@ ul{
         font-size: 2rem;
         display: flex;
         padding-top: 6px;
-        
       }
     
       .fa-bars{
@@ -108,6 +105,4 @@ ul{
           padding-top: 6px;
           color: #fff;
         }
-       
-     
     }

@@ -59,8 +59,6 @@
     cursor: pointer;
 }
 
-
-
 @media screen and (max-width: 480px){
     .footer-container h2,.footer-text span{
         font-size: 50px;
