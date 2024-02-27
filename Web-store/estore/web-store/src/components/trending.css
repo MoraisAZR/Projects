@@ -72,13 +72,11 @@ overflow: hidden;
         cursor: pointer;
     }
 
-
     @media screen and (max-width: 860px){
         .trending-card h2{
             font-size: 20px;
         }
     }
-
     @media screen and (max-width: 730px){
         .trending-card img{
             height: 100px;
@@ -93,4 +91,5 @@ overflow: hidden;
             width: 90%;
         }
     }
+
 

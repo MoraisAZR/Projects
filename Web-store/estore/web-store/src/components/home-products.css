@@ -52,6 +52,7 @@ font-weight: normal;
 .products-card p{
 font-family: sans-serif;
 font-weight: bold;
+word-wrap: break-word;
 }
 
 .products-card img{
@@ -80,5 +81,12 @@ font-weight: bold;
     .products-card{
         height: 200px;
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .products-container{
+        grid-template-columns: repeat(2,1fr);
+
     }
 }

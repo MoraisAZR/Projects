@@ -61,7 +61,7 @@ color:#fff;
 transition: all 0.2s ease;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 555px){
     .comfort-msg h2{
         font-size: 18px;
     }
@@ -73,5 +73,9 @@ transition: all 0.2s ease;
     .comfort-msg button{
         height: 30px;
         width: 100px;
+    }
+
+    .comfort-container{
+        width: 90%;
     }
 }

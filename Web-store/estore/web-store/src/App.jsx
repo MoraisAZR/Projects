@@ -21,7 +21,7 @@ function App() {
   
     if (existingItemIndex !== -1) {
       const updatedCart = cartItems.map((item, index) =>
-        index === existingItemIndex ? { ...item, quantity: item.quantity + product.quantity } : item
+        index === existingItemIndex ? { ...item, quantity: item.quantity + product.quantity, totalPrice: (item.quantity + product.quantity) * item.price } : item
       );
       setCartItems(updatedCart);
     } else {

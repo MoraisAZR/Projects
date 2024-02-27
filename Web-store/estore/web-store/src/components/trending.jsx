@@ -1,77 +1,17 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import "./trending.css"
 import { Link } from 'react-router-dom';
+import {products} from "./utils"
 
 const TrendingProducts = () =>{
-    const Trending = [
-        {
-            id:5,
-            name:"Body oil",
-            price:"35",
-            img:"oil.png",
-            category:"Skincare"
-        },
-        {
-            id:6,
-            name:"Wood Shelf",
-            price:"520",
-            img:"shelf.png",
-            category:"LivingRoom"
-        },
-        {
-            id:7,
-            name:"Soft Chair",
-            price:"199",
-            img:"chairtr.png",
-            category:"LivingRoom"
-        },
-        {
-            id:8,
-            name:"Modern Shelf",
-            price:"109",
-            img:"shelftr.png",
-            category:"LivingRoom"
-        },
-        {
-            id:9,
-            name:"Golden Lamp",
-            price:"99",
-            img:"lamp2tr.png",
-            category:"LivingRoom"
-        },
-        {
-            id:10,
-            name:"Modern Vase",
-            price:"25",
-            img:"vasetr.png",
-            category:"LivingRoom"
-        },
-        {
-            id:11,
-            name:"Picasso Styled Lamp",
-            price:"50",
-            img:"lamptr.png",
-            category:"LivingRoom"
-        },
-        {
-            id:12,
-            name:"Hidration Gel",
-            price:"20",
-            img:"hidrationtr.png",
-            category:"Skincare"
-        }
-    ];
-
   const [startIndex,setStartIndex] = useState(0);
-  const itemLimit = 4;
-  const visibleItems = Trending.slice(startIndex , startIndex + itemLimit);
-
-
-
+  const [itemLimit, setItemLimit] = useState(4);
+  const totalItems = 8;
+  const visibleItems = products.slice(startIndex , startIndex + itemLimit);
 
   const handleClick = () =>{
     const nextIndex = startIndex + 1;
-    if(nextIndex < Trending.length){
+    if(nextIndex < totalItems){
         setStartIndex(nextIndex);
     }
   }
@@ -82,6 +22,22 @@ const TrendingProducts = () =>{
         setStartIndex(prevIndex);
     }
   }
+
+  const updateLimit = () =>{
+    if(window.innerWidth<= 500){
+      setItemLimit(3)
+    }else{
+      setItemLimit(4)
+    }
+  }
+
+  useEffect(() => {
+    updateLimit();
+    window.addEventListener('resize', updateLimit);
+    return () => {
+      window.removeEventListener('resize', updateLimit);
+    };
+  }, []);
   
     const ProductCard = ({ product }) => (
         <div className="trending-card">
@@ -102,7 +58,7 @@ const TrendingProducts = () =>{
         <h1>Trending</h1>
         <div className="handle-btns">
             <button onClick={handlePrevClick}disabled={startIndex === 0}> <i className="fa-solid fa-arrow-left" /></button>
-            <button onClick={handleClick} disabled={startIndex + itemLimit >= Trending.length}> <i className="fa-solid fa-arrow-right" /></button>
+            <button onClick={handleClick} disabled={startIndex + itemLimit >= products.length}> <i className="fa-solid fa-arrow-right" /></button>
             </div>
         </div>
         <div className="trending-container">
