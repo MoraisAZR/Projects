@@ -36,7 +36,7 @@ This project was crafted with:
 
 ## Contributing
 
-Feel free to fork and make changes. Please give proper credit by linking back to [[Your GitHub Profile](https://github.com/MoraisAZR)].
+Feel free to fork and make changes. Please give proper credit by linking back to [(https://github.com/MoraisAZR)].
 
 
 ## Contact
