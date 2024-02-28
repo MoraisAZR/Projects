@@ -5,16 +5,12 @@ Built With
 My personal projects (https://portfolio-web-omega-ten.vercel.app/) features some of my GitHub projects as well as my resume and technical skills.
 
 This project was built using these technologies:
--React.js
--CSS
--Vercel
--VsCode
--Vite
+React.js/CSS/Vercel/VsCode/Vite
 
 ## Features
 
 - 📖 Multi-Page Layout
-- 🎨 Styled with React and CSS with easy-to-customize colors
+- 🎨 Crafted with CSS and contemporary design principles
 - 📱 Fully Responsive
 
 ## Getting Started
