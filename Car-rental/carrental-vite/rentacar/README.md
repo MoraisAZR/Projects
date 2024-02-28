@@ -1,8 +1,44 @@
-# React + Vite
+# Car Rental Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TL;DR
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [https://github.com/MoraisAZR]. Thanks!
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to the OrangeCar web, where we provide a platform for renting cars. This website showcases my skills in web development and design.
+
+## Built With
+
+This project was crafted with:
+
+- React
+- CSS
+- JavaScript (for interactive features)
+
+## Features
+
+- 🚗 Compare and rent a variety of cars
+- 📅 Booking calendar with real-time availability updates
+
+## Getting Started
+
+1. Clone down this repository.
+2. Ensure you have [Any dependencies or prerequisites needed] installed globally on your machine.
+3. **Installation and Setup Instructions:**
+   - Installation: `npm install` 
+   - Start the project: `npm run dev`
+
+## Usage Instructions
+
+1. Open the project folder.
+2. Navigate to `/src` or the relevant directory containing project files.
+3. Customize the content, styles, and features according to your requirements.
+
+## Contributing
+
+Feel free to fork and make changes. Please give proper credit by linking back to [[Your GitHub Profile](https://github.com/MoraisAZR)].
+
+
+## Contact
+
+For questions or feedback, contact me at [tiagoperamorais@gmail.com].
